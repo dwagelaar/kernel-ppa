@@ -1,6 +1,6 @@
 Kernel driver ppa
 =================
-
+Linux kernel driver for the parallel port IOMega Zip Drive (old version).
 
 Building & Installing
 ---------------------
