@@ -98,6 +98,7 @@ dkms:
 	@cp `pwd`/VERSION $(DKMS_ROOT_PATH)
 	@cp `pwd`/Makefile $(DKMS_ROOT_PATH)
 	@cp `pwd`/compat.h $(DKMS_ROOT_PATH)
+	@cp `pwd`/$(DRIVER).h $(DKMS_ROOT_PATH)
 	@cp `pwd`/$(DRIVER).c $(DKMS_ROOT_PATH)
 	@dkms add -m $(DRIVER) -v $(DRIVER_VERSION)
 	@dkms build -m $(DRIVER) -v $(DRIVER_VERSION)
