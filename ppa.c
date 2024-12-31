@@ -968,7 +968,6 @@ second_pass:
 
 static int ppa_adjust_queue(struct scsi_device *device)
 {
-	blk_queue_bounce_limit(device->request_queue, BLK_BOUNCE_HIGH);
 	return 0;
 }
 
@@ -1155,7 +1154,6 @@ static struct parport_driver ppa_driver = {
 	.name		= "ppa",
 	.match_port	= ppa_attach,
 	.detach		= ppa_detach,
-	.devmodel	= true,
 };
 module_parport_driver(ppa_driver);
 
